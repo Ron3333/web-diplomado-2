@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+
+		h1{
+			color: #ff0000;
+		}
+
+		.uno{
+			color: #00ff00;
+		}
+
+		#dos{
+			color: #0000ff;
+		}
+
+		h2, p{
+			color: green;
+		}
+
+		div p {
+			color: orange;
+			font-size: 48px;
+		}
+
+		h1, .item, #este {
+			font-weight: bold;
+			color: green;
+		}
+		
+		p.tres{
+		 	color: yellow;
+		 	font-size: 78px;
+		 }
+
+		.caja1{
+			background-color: #00ff00;
+			width: 50px;
+			height: 50px;
+			margin-bottom: 100px;
+		}
+
+		.caja1:hover{
+			background-color: #ff0000;
+		}
+
+		p > span {
+			font-size: 48px;
+			color: aquamarine;
+		}
+
+
+	</style>
+</head>
+<body>
+
+	<h1>Hola Mundo!</h1>
+	<h1 class="uno">Hola Mundo!</h1>
+	<h1 class="uno">Hola Mundo 2!</h1>
+	<h1 class="uno">Hola Mundo 3!</h1>
+	<h1 class="uno">Hola Mundo 4!</h1>
+	<h1 id="dos">Hola Mundo 5!</h1>
+
+	<h2>Hola</h2>
+	<p>parrafo</p>
+
+	<div>
+		<p>Hola desde el parrafo</p>
+	</div>
+
+	<p class="tres">Parrafo de clases</p>
+	<div class="caja1"></div>
+
+    <p>Esto es <span>un span hijo directo de P</span></p>
+    <p>Aquí tenemos una <b>negrita y un <span>span que no es hijo directo</span></b></p>
+    <p>Aquí hay otro <span>span hijo directo</span> de P</p>
+
+
+</body>
+</html>

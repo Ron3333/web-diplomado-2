@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS</title>
+	<style>
+	.box-1{
+		position: relative;
+		background-color: orange;
+		width: 500px;
+		height: 100px;
+	}
+
+	.box-1:hover .box-2{
+		display: block;
+	}
+	.box-2{
+		display: none;
+		background-color: gray;
+		width: 500px;
+		height: 150%;
+		position: absolute;
+		left: 100%;
+		top: 100%;
+	}
+
+	.box-3{
+		background-color: aquamarine;
+		width: 20px;
+		height: 20px;
+		/*visibility: hidden;*/
+		display: none;
+	}
+	.box-4{
+		background-color: aquamarine;
+		margin-left: 200px;
+		margin-top: 200px;
+		width: 100px;
+		height: 100px;
+	    position: fixed;
+	}
+	h3{
+		border: 1px solid red;
+	}
+
+
+	
+</style>
+</head>
+
+<body>
+	<h1 class="box-3">Hola 1</h1>
+	<h1>Hola 2</h1>
+	<h1>Hola 3</h1>
+	<div class="box-1">
+		<div class="box-2">
+			<h3>Menu 1</h3>
+			<h3>Menu 2</h3>
+			<h3>Menu 2</h3>
+		</div>
+	</div>
+	<div class="box-4"></div>
+
+	<br>
+	<br>
+	<br>
+	<br>
+	
+
+</body>
+</html>
