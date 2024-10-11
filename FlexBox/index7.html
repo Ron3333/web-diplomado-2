@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Medias Queries</title>
+	<style>
+		.box-1{
+			color: red;
+			font-size: 54px;
+		}
+
+		.box-2{
+			color: aquamarine;
+			font-size: 12px;
+		}
+
+		.box-3{
+			color: black;
+			font-size: 12px;
+		}
+
+	@media (max-width: 575px) {
+    	
+    	.box-1{
+			color: blue;
+			font-size: 24px;
+		}
+    }
+
+    @media ((min-width: 500px)  and (max-width: 800px)) {
+    	
+    	.box-2{
+			color: yellow;
+			font-size: 34px;
+		}
+    }
+
+    @media (min-width: 500px){
+
+    	.box-3{
+			color: green;
+			font-size: 64px;
+		}
+    }
+
+
+
+	</style>
+</head>
+<body>
+	<div class="box-1">Hola Mundo caja 1</div>
+	<div class="box-2">Hola Mundo caja 2</div>
+	<div class="box-3">Hola Mundo caja 3</div>
+
+</body>
+</html>
