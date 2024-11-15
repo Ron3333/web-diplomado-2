@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DOM</title>
+</head>
+<body>
+	<h1 id='cabecera' >Hola desde JavaStript<h1>
+	<h1 id='cabecera2' ><h1>
+
+   <p>Hola 1</p>
+   <p>Hola 2</p>
+   <p>Hola 3</p>
+   <p>Hola 4</p>
+   <p class="azul">Hola azul 1</p>
+   <p class="azul">Hola azul 2</p>
+
+   <ul>
+   		<li>Lista 1</li>
+   		<li>Lista 2</li>
+   		<li>Lista 3</li>
+   </ul>
+		
+	<script type="text/javascript">
+
+		let cabecera = document.getElementById('cabecera').innerHTML;
+		console.log("VALOR DE CABECERA: " + cabecera);
+		let cabecera2 = document.getElementById('cabecera2');
+		cabecera2.innerHTML = "Hola desde este script";
+
+		let parrafo = document.getElementsByTagName("p");
+		console.log(parrafo);
+		console.log("No. párrafo:" + parrafo.length);
+		console.log(`No. párrafo: ${parrafo.length}`);
+
+		for(let i=0; i<parrafo.length ; i++){
+			//console.log(parrafo[i].innerHTML)
+			console.log(`i:${i} -> ${parrafo[i].innerHTML}`)
+		}
+
+		let elementos = document.querySelectorAll("p.azul");
+		console.log(`No. elementos azul: ${elementos.length}`);
+
+		for(let elemento of elementos){
+			console.log(`${elemento.innerHTML}`);
+		}
+
+		let elementos2 = document.getElementsByClassName("azul");
+
+		for(let elemento2 of elementos2){
+			console.log(`${elemento2.innerHTML}`);
+		}
+
+	
+	</script>
+
+</body>
+</html>
