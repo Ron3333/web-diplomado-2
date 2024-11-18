@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DOM 6</title>
+</head>
+<body>
+
+	<p onmouseover="mostrarMensaje()" onmouseout="ocultarMensaje()">Pasa el mouse sobre este texto</p>
+	<div id="mensaje">¡Hola! Este es un mensaje adicional.</div>
+
+	<img id="miImagen" src="mini.png" onmouseover="aumentarTamano()" onmouseout="restaurarTamano()" alt="Imagen">
+
+	<br>
+	<input type="text"  onchange="convertir(this)">
+	
+	<script>
+
+		function convertir(nombreInput){
+			nombreInput.value = nombreInput.value.toUpperCase();
+		}
+
+		function mostrarMensaje() {
+            document.getElementById('mensaje').style.display = 'block';
+        }
+
+        function ocultarMensaje() {
+            document.getElementById('mensaje').style.display = 'none';
+        }
+
+        function aumentarTamano() {
+            document.getElementById('miImagen').style.width = '200px';
+            
+        }
+
+        function restaurarTamano() {
+            document.getElementById('miImagen').style.width = '150px';
+            
+        }
+
+
+		
+	</script>
+
+</body>
+</html>

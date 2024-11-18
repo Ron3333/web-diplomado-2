@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DOM 5</title>
+</head>
+<body>
+	<h1 id="titulo" onmouseover="rojo(this)"  onmouseout="azul(this)">
+	   Manejo del DOM javascript
+    </h1>
+
+    <h1 id="titulo2" onmousedown="rojo2(this)"  onmouseup="azul2(this)" onclick="verde(this)">
+	   Manejo del DOM javascript
+    </h1>
+
+    <script type="text/javascript">
+
+    	function rojo(titulo){
+			titulo.style.color = 'red';
+			console.log("cambio a rojo onmousedown ");
+		}
+
+		function azul(titulo){
+			titulo.style.color = 'blue';
+			console.log("cambio a azul onmouseup ");
+		}
+
+
+		function rojo2(titulo){
+			titulo.style.color = 'red';
+			console.log("cambio a rojo onmousedown ");
+		}
+
+		function azul2(titulo){
+			titulo.style.color = 'blue';
+			console.log("cambio a azul onmouseup ");
+		}
+
+		function verde(titulo){
+			titulo.style.color = 'green';
+			console.log("cambio a verde onclick ");
+		}
+
+    </script>
+
+</body>
+</html>

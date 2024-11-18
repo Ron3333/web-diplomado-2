@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DOM</title>
+</head>
+<body>
+
+	<h1 id="titulo">Manejo del DOM javascript</h1>
+	<button onclick="mostrar()">MOSTRAR</button>
+	<img id="imagen" src="auto.jpeg" alt="Pepe" >
+
+	<script type="text/javascript">
+		//document.write("Saludos desde javascript");
+		let flag = true;
+		function mostrar(){
+			//document.write("Adios");
+
+			document.getElementById("titulo").style.color ="green";
+			document.getElementById("titulo").style.fontSize ="50px";
+
+			if(flag){
+				document.getElementById("imagen").src = "mini.png";
+				flag = false;
+			}else{
+				document.getElementById("imagen").src = "auto.jpeg";
+				flag = true;
+			}
+			/*
+			document.getElementById("titulo").innerHTML = "Nuevo Titulo";
+			document.getElementById("imagen").src = "mini.png";
+			document.getElementById("imagen").alt = "Juan";
+	*/
+		}
+
+		/*
+		backgroundColor
+		fontSize
+		fontWeight
+		textAlign
+		margin
+		padding
+		border
+		width
+		height
+		display
+		visibility
+		*/
+
+		
+	</script>
+
+</body>
+</html>
