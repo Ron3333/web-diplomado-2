@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DOM 11</title>
+</head>
+<body>
+
+	<div id="container">
+    	<h1>Ejercicio de Creación de Elementos</h1>
+  	</div>
+
+  	<script>
+  		// Para crear elementos llamamos a createElement con el nombre del elemento
+  		let nuevoH1 = document.createElement('h1');
+        let nuevoParrafo = document.createElement('p');
+
+        // Crear nodos de texto para un elemento
+    	let textoH1 = document.createTextNode('Hola mundo!');
+    	let textoParrafo = document.createTextNode('Lorem ipsum dolor sit amet, consectetur adipiscing elit.');
+
+    	// Añadir el texto a los elementos
+    	nuevoH1.appendChild(textoH1);
+    	nuevoParrafo.appendChild(textoParrafo);
+
+    	let contenedor = document.getElementById('container');
+
+    	contenedor.appendChild(nuevoH1);
+    	contenedor.appendChild(nuevoParrafo);
+
+  	</script>
+
+</body>
+</html>

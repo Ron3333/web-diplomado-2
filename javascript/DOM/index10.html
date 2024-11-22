@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DOM</title>
+</head>
+<body>
+
+	<h2>Acceder a hijos/padres de un elemento</h2>
+    <div id="container">
+        <h3>Ejercicio con JavaScript</h3>
+        <p>Este es un párrafo dentro del contenedor.</p>
+        <ul id="my-list">
+          <li>Elemento de lista 1</li>
+          <li>Elemento de lista 2</li>
+          <li>Elemento de lista 3</li>
+        </ul>
+    </div>
+    <script>
+    	  let elem = document.getElementById('my-list');
+    	  let hijos = elem.childNodes;
+    	  /*
+    	  console.log('Hijos del elemento:', hijos);
+    	  for (let i = 0; i < hijos.length; i++) {
+             console.log(hijos[i].textContent );
+          }
+		  */
+          //let padre = elem.parentNode;
+          //console.log('Nodo padre del elemento:', padre);
+
+          let  hijosArray = Array.from(hijos);
+          console.log(hijosArray);
+
+          hijosArray.forEach(function(hijo) {
+            console.log(hijo.textContent);
+          });
+
+          hijos.forEach(function(hijo) {
+            console.log(hijo.textContent);
+          });
+
+    </script>
+</body>
+</html>

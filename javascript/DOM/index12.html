@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DOM 12</title>
+	<style>
+		 .box {
+		      width: 50px;
+		      height: 50px;
+		      background-color: #ccc;
+		      margin: 20px;
+		    }
+		 .red {
+     		 background-color: #ff0000;
+    		}
+	</style>
+</head>
+<body>
+	<h1>Ejercicio de Manipulación de Clases</h1>
+
+	<div id="box1" class="box"></div>
+
+	<button id="btn-add">Añadir clase</button>
+	<button id="btn-add-remove">Añadir clase</button>
+
+	<script>
+		let box1 = document.getElementById('box1');
+		let btnAdd = document.getElementById('btn-add');
+		let btnAddremove = document.getElementById('btn-add-remove');
+
+		btnAdd.addEventListener('click', function() {
+        	box1.classList.add('red');
+         
+    	});
+
+    	btnAddremove.addEventListener('click', function() {
+        	box1.classList.remove('red');
+         
+    	});
+
+    	//classList.toggle('violeta');
+	</script>
+
+</body>
+</html>
